@@ -5,7 +5,7 @@ public class Main {
         expenses [0] = 26998;
         expenses [1] = 43876;
         expenses [2] = 16789;
-        expenses [3] = 25678;
+        expenses [3] = 5678;
         expenses [4] = 9874;
         int sum  = 0;
         for (int index = 0; index < expenses.length; index++){
@@ -13,13 +13,14 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
         //2 задача
-        int maxExperenses = -1;
-        int minExperenses = -1;
-        for (int i = 0; i < expenses.length; i++){
-            if (expenses[i] > maxExperenses){
-                maxExperenses = expenses[i];
-            } else if (expenses[i] < maxExperenses){
-                minExperenses = expenses[i];
+        int maxExperenses = expenses[0];
+        int minExperenses = expenses[0];
+        for (int i: expenses){
+            if (i < minExperenses){
+                minExperenses = i;
+            }
+            if ( i > maxExperenses){
+                maxExperenses = i;
             }
         }
         System.out.println("Минимальная сумма трат за неделю составила " + minExperenses +" рублей. Максимальная сумма трат за неделю составила " + maxExperenses + " рублей");
