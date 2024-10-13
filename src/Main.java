@@ -23,6 +23,7 @@ public class Main {
                 maxExperenses = i;
             }
         }
+
         System.out.println("Минимальная сумма трат за неделю составила " + minExperenses +" рублей. Максимальная сумма трат за неделю составила " + maxExperenses + " рублей");
         //3 задача
         float averageExperenses = 0;
